@@ -1,13 +1,13 @@
 import React from 'react';
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Home from './Components/Home';
 import { Routes , Route } from 'react-router-dom';
 
 const App = () => {
   return (
           <Routes>
-                <Route path="/" element={ <Home/> } />
+              <Route path="/" element={ <Home/> } />
               <Route path = "/about" element = { <About /> }/>
               <Route path = "/contact" element = { <Contact /> }/>
           </Routes> 
